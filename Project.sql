@@ -9,8 +9,8 @@ print(mydb.connection_id)
 import mysql.connector
 mydb = mysql.connector.connect(host = 'localhost',user = 'root',password='Tarak@2002',database = 'INVENTORY_MANAGEMENT')
 cur=mydb.cursor()
-create = 'create table MANUFACTURE(id INTEGER(10) PRIMARY KEY,product_name VARCHAR(40),color VARCHAR(20),quantity INTEGER(10),manufacturing_date DATE,defective_ITEM VARCHAR(30),company_name varchar(40))'
-cur.execute(create)
+create_ = 'create table MANUFACTURE(id INTEGER(10) PRIMARY KEY,product_name VARCHAR(40),color VARCHAR(20),quantity INTEGER(10),manufacturing_date DATE,defective_ITEM VARCHAR(30),company_name varchar(40))'
+cur.execute(create_)
 print("Table created succesfully")
 
 
